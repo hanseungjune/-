@@ -35,14 +35,11 @@
 # else:
 #   print('YES')  
 
-# ✨ 입력
-
 import sys
 input = sys.stdin.readline
 N = int(input())
 circle = []
 
-# ✨ 준비
 for i in range(N):
     a,b = map(int,input().split())
     circle.append((a-b,i))
@@ -50,7 +47,6 @@ for i in range(N):
     
 circle.sort()
 
-# ✨ 비교
 stack = []
 for i in range(N*2):
     d, c = circle[i]
