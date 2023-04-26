@@ -28,4 +28,7 @@ for i in range(n):
     else:
       break
   
-  
+  result = set(stack)
+  closedBuilding = i
+  for ele in stack:
+    abs(i - ele[0])
